@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="driver_values">
+        <item>api</item>
+        <item>kernel</item>
+    </string-array>
+    <string-array name="driver_entries">
+        <item>Android API</item>
+        <item>Native kernel interface</item>
+    </string-array>
+
+</resources>

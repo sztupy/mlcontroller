@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings" >
+        <ListPreference
+            android:defaultValue="api"
+            android:dialogTitle="@string/driver_opt"
+            android:entries="@array/driver_entries"
+            android:entryValues="@array/driver_values"
+            android:key="driver_mode"
+            android:title="@string/driver_sh" />
+		<CheckBoxPreference
+		    android:key="hw_accel"
+		    android:defaultValue="false"
+		    android:title="@string/hw_accel"
+		    android:summaryOn="@string/hw_accel_on"
+		    android:summaryOff="@string/hw_accel_off"
+		    />
+        <PreferenceScreen
+            android:key="refresh"
+            android:summary="@string/refresh_desc"
+            android:title="@string/refresh" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="device_list"
+        android:title="@string/device_list" >
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_box" >
+        <PreferenceScreen
+            android:summary="@string/about_me_desc"
+            android:title="@string/about_me" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://sztupy.hu" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="@string/version_desc"
+            android:title="@string/version" />
+        <PreferenceScreen android:title="@string/donate" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=2631719" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
